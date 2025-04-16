@@ -34,12 +34,15 @@ def main():
         
         if choice == '1':
             result = calc.add(num1, num2)
+            print("\n")
             print(f"{num1} + {num2} = {result}")
         elif choice == '2':
             result = calc.subtract(num1, num2)
+            print("\n")
             print(f"{num1} - {num2} = {result}")
         elif choice == '3':
             result = calc.multiply(num1, num2)
+            print("\n")
             print(f"{num1} * {num2} = {result}")
         elif choice == '4':
             result = calc.divide(num1, num2)
@@ -50,7 +53,7 @@ def main():
         print("Invalid input. Please enter numbers only.")
     except Exception as e:
         print(f"An error occurred: {e}")
-    
+    print("\n")
     print("Goodbye!")
 
 if __name__ == "__main__":
