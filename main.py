@@ -2,13 +2,13 @@
 
 class Calculator:
     def add(self, a, b):
-        return a + b + 1
+        return a + b
     
     def subtract(self, a, b):
         return a - b
     
     def multiply(self, a, b):
-        return (a - b)*50
+        return a * b
     
     def divide(self, a, b):
         if b == 0:
@@ -34,7 +34,7 @@ def main():
         
         if choice == '1':
             result = calc.add(num1, num2)
-            print("\n")
+            print()
             print(f"{num1} + {num2} = {result}")
         elif choice == '2':
             result = calc.subtract(num1, num2)
